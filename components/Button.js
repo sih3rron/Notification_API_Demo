@@ -5,10 +5,16 @@ export default function Button({ text }) {
   return (
     <button
       type="button"
-      className="permission bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded w-32"
+      className={
+        `${text} ${text}` +
+        ':hover text-white font-bold py-2 px-4 border border-blue-700 rounded w-32'
+      }
       onClick={handlePermissions}
     >
-      {text}
+      {`${
+        text.slice(0, 1).toUpperCase() +
+        text.slice(1, text.length).toLowerCase()
+      }`}
     </button>
   );
 }

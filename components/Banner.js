@@ -2,16 +2,16 @@ import React from 'react';
 import Button from '../components/Button';
 
 export default function Banner() {
-  let permission = 'Default';
+  let permission = 'default';
   switch (Notification.permission) {
     case 'denied':
-      permission = 'Denied';
+      permission = 'denied';
       break;
     case 'granted':
-      permission = 'Granted';
+      permission = 'granted';
       break;
     default:
-      permission = 'Default';
+      permission = 'default';
   }
   console.log(Notification.permission);
   return (

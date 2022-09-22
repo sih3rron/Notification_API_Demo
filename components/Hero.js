@@ -6,7 +6,7 @@ export default function Hero() {
       className="w-full h-full bg-cover bg-center flex justify-center items-center"
       style={{
         backgroundImage:
-          "url('https://images.pexels.com/photos/418831/pexels-photo-418831.jpeg')",
+          "url('https://images.unsplash.com/photo-1556740714-a8395b3bf30f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80')",
       }}
     >
       <div className="flex flex-col justify-center items-center">

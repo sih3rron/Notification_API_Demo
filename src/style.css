@@ -26,3 +26,9 @@ p {
 .default:hover {
   background-color: blue;
 }
+
+.times::after {
+  padding: 1rem;
+  content: '\00D7';
+  color: white;
+}

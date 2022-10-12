@@ -1,12 +1,4 @@
-export default function checkPromiseExists(){
-  try{
-    Notification.requestPermission().then();
-  } catch(e){
-    return false;
-  }
-  return true;
-}
-
+import checkPromiseExists from "./checkPromiseExists";
 export default function handlePermissions(e) {
   e.preventDefault();
   if (!('Notification' in window)) {

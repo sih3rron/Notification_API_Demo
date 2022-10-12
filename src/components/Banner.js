@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Button from '../components/Button';
+import Button from './Button';
 
 export default function Banner() {
   const [show, setShow] = useState(true);
@@ -7,17 +7,7 @@ export default function Banner() {
     setShow((current) => !current);
   };
 
-  let permission = 'default';
-  switch (Notification.permission) {
-    case 'denied':
-      permission = 'denied';
-      break;
-    case 'granted':
-      permission = 'granted';
-      break;
-    default:
-      permission = 'default';
-  }
+  let permission = Notification.permission;
 
   return (
     <div>
